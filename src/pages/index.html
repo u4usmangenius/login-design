@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Application</title>
+    <script src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script src="client.js"></script>
+    <link rel="stylesheet" href="Chat.css" />
+    <!-- <script src="./Client.js"></script> -->
+  </head>
+  <style>
+    #image {
+      width: 60px;
+      height: 55px;
+      border-radius: 50%;
+      display: flex;
+      padding-left: 47%;
+    }
+    #image img {
+      border-radius: 50px;
+    }
+  </style>
+  <body>
+    <div>
+      <nav id="image">
+        <img src="D:\JavaScript\projects\chat-app\src\assets\img.jpg" alt="" />
+      </nav>
+      <div class="container_1" id="container">
+        <div class="message right">Usman: Hey How are you?</div>
+        <div class="message left">Tahir: Bhai I'm fine. What's about you.</div>
+      </div>
+      <div class="send">
+        <form action="#" id="send-message">
+          <input
+            type="text"
+            name="messageInp"
+            id="Inp"
+            placeholder="Enter you message here"
+          />
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
